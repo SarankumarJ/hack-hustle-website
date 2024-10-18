@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackathon 2024</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mediaquery.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery.marquee@1.6.0/jquery.marquee.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<body>
+    <!-- Responsive Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="images/icons/lo-removebg-preview.png" alt="Hackathon Logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="#domains">Domains</a></li>
+            <li><a href="#timeline">Timeline</a></li>
+            <li><a href="#prizes">Prizes</a></li>
+            <li><a href="#sponsors">Sponsors</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a href="https://hackhustle.devfolio.co/" class="nav-cta-btn">Register Now</a>
+    </nav>
+
+    <div class="starry-sky">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+    </div>
+
+    <!-- Hero Section with Animated Background -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <!-- Left side content (now at the top) -->
+            <div class="hero-left">
+                <h1>SAVEETHA ENGINEERING COLLEGE</h1>
+                <h1>TECH SOCIETY</h1>
+                <h2>PRESENTS</h2>
+                <h3>HACK HUSTLE</h3>
+                <a href="https://hackhustle.devfolio.co/" class="cta-btn">Register Now</a>
+            </div>
+
+            <!-- Right side timer (now at the bottom) -->
+            <div class="hero-right">
+                <div id="timer">
+                    <div class="timer-box">
+                        <span id="days"></span>
+                        <p>Days</p>
+                    </div>
+                    <div class="timer-box">
+                        <span id="hours"></span>
+                        <p>Hours</p>
+                    </div>
+                    <div class="timer-box">
+                        <span id="minutes"></span>
+                        <p>Minutes</p>
+                    </div>
+                    <div class="timer-box">
+                        <span id="seconds"></span>
+                        <p>Seconds</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section aria-label="section" class="no-top no-bottom scroller">
+        <div class="wow fadeInRight d-flex">
+            <div class="de-marquee-list wow">
+                <div class="d-item">
+                    <span class="d-item-txt">Saveetha Engineering College</span>
+                    <span class="d-item-display"><i class="d-item-block"></i></span>
+                    <span class="d-item-txt">Tech Society</span>
+                    <span class="d-item-display"><i class="d-item-block"></i></span>
+                    <span class="d-item-txt">Hack Hustle</span>
+                    <span class="d-item-display"><i class="d-item-block"></i></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Domains Section -->
+    <section class="domains" id="domains">
+        <h2>Domains</h2>
+        <div class="domain-cards">
+            <div class="card">
+                <img src="images/icons/ml.png" alt="Domain 1 Icon">
+                <h3>Machine Learning</h3>
+            </div>
+            <div class="card">
+                <img src="images/icons/cs.png" alt="Domain 2 Icon">
+                <h3>Cyber Security</h3>
+            </div>
+            <div class="card">
+                <img src="images/icons/blockchain.png" alt="Domain 2 Icon">
+                <h3>Web3 & Blockchain</h3>
+            </div>
+            <!-- Add more domain cards as needed -->
+        </div>
+    </section>
+
+    <section class="timeline-workflow">
+        <div class="workflow-header">
+            <h2>Hackathon Timeline</h2>
+        </div>
+        <div class="timeline-steps">
+            <!-- Step 1 -->
+            <div class="timeline-step">
+                
+                <div class="step-details">
+                    <h3>01st October 2024</h3>
+                    <p>Registration & Idea Submission Starts</p>
+                </div>
+            </div>
+            <!-- Step 2 -->
+            <div class="timeline-step">
+                <div class="step-details">
+                    <h3>26th October 2024</h3>
+                    <p>Registration Ends</p>
+                </div>
+            </div>
+            <!-- Step 3 -->
+            <div class="timeline-step">
+                <div class="step-details">
+                    <h3>26th October 2024</h3>
+                    <p>Idea Submission Ends</p>
+                </div>
+            </div>
+            <!-- Step 4 -->
+            <div class="timeline-step">
+                <div class="step-details">
+                    <h3>01st November 2024</h3>
+                    <p>Announcement of Shortlisted Teams</p>
+                </div>
+            </div>
+            <div class="timeline-step">
+                <div class="step-details">
+                    <h3>02st November 2024</h3>
+                    <p>Teams RSVP</p>
+                </div>
+            </div>
+            <div class="timeline-step">
+                <div class="step-details">
+                    <h3>08st November 2024</h3>
+                    <p>Hackathon Starts</p>
+                </div>
+            </div>
+            <div class="timeline-step">
+                <div class="step-details">
+                    <h3>09st November 2024</h3>
+                    <p>Hackathon Ends</p>
+                </div>
+            </div>
+            <!-- Task Done -->
+            <div class="task-done">
+                <h3>Task Done!</h3>
+                <p>The hackathon concludes, with all teams required to submit their final solutions before the deadline. Teams will showcase their solutions to the respective problem statements they chose.</p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Prizes Section -->
+    <section id="prizes" class="pizesection">
+        <h2 class="pizesectionh2">Prizes</h2>
+        <div class="prizes">
+            <!-- Prize card for Machine Learning -->
+            <div class="prize-card">
+                <h2>Machine Learning</h2>
+                <div class="prize-gold">
+                    <h3>Winner</h3>
+                    <p>₹20,000</p>
+                </div>
+                <div class="prize-silver">
+                    <h3>Runner</h3>
+                    <p>₹15,000</p>
+                </div>
+            </div>
+
+            <!-- Prize card for Cyber Security -->
+            <div class="prize-card">
+                <h2>Cyber Security</h2>
+                <div class="prize-gold">
+                    <h3>Winner</h3>
+                    <p>₹20,000</p>
+                </div>
+                <div class="prize-silver">
+                    <h3>Runner</h3>
+                    <p>₹15,000</p>
+                </div>
+            </div>
+
+            <!-- Prize card for Web3 & Blockchain -->
+            <div class="prize-card">
+                <h2>Web3 & Blockchain</h2>
+                <div class="prize-gold">
+                    <h3>Winner</h3>
+                    <p>₹20,000</p>
+                </div>
+                <div class="prize-silver">
+                    <h3>Runner</h3>
+                    <p>₹15,000</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Sponsors Section -->
+    <section class="sponsors" id="sponsors">
+        <h2>Sponsors</h2>
+        <div class="sponsor-logos">
+            <div class="gold-sponsors">
+                <h3>Gold Sponsors</h3>
+                <img src="images/sponsors/devfolio.png" alt="Gold Sponsor 1">
+                <img src="images/sponsors/polygon.png" alt="Gold Sponsor 2">
+            </div>
+        </div>
+        <div class="sponsor-logos">
+            <div class="silver-sponsors">
+                <h3>Silver Sponsors</h3>
+                <img src="images/sponsors/ethindia.png" alt="Silver Sponsor 1">
+                <img src="images/sponsors/replit_updated.png" alt="Silver Sponsor 1">
+            </div>
+        </div>
+        <div class="sponsor-logos">
+            <div class="silver-sponsors">
+                <h3>Community Partners</h3>
+                <img src="images/sponsors/ethindia.png" alt="Silver Sponsor 1">
+                <img src="images/sponsors/replit_updated.png" alt="Silver Sponsor 1">
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Team Section -->
+    <section class="team" id="team">
+        <h2>Our Team</h2>
+        <div class="team-tree">
+            <div class="team-member">
+                <img src="images/team/16.jpeg" alt="Member 1">
+                <h3>Mr.C.Obed Otto</h3>
+                <p>Event Director</p>
+            </div>
+            <div class="team-member">
+                <img src="images/team/12.jpeg" alt="Member 2">
+                <h3>Ms. Akila Mohan</h3>
+                <p>Executive Coordinator</p>
+            </div>
+            <div class="team-member">
+                <img src="images/team/14.jpeg" alt="Member 2">
+                <h3>Mr.Sarankumar</h3>
+                <p>Lead Organizer</p>
+            </div>
+            <div class="team-member">
+                <img src="images/team/1.jpeg" alt="Member 2">
+                <h3>Mr.Karthick</h3>
+                <p>Operations Lead</p>
+            </div>
+            <div class="team-member">
+                <img src="images/team/13.jpeg" alt="Member 2">
+                <h3>Mr.Aldrin Lijo</h3>
+                <p>Strategic Lead</p>
+            </div>
+            <div class="team-member">
+                <img src="images/team/11.jpeg" alt="Member 2">
+                <h3>Mr.Santhan Kumar</h3>
+                <p>Technical Lead</p>
+            </div>
+            <!-- Add more team members as needed -->
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <h2>Get in Touch</h2>
+        <div class="contact-container">
+            <div class="contact-map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5647.454036657436!2d80.01720688831259!3d13.028801331967973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a528b000e40d493%3A0x9d3693b41d991ae2!2sNew%20SEC%20Campus!5e0!3m2!1sen!2sin!4v1726908158147!5m2!1sen!2sin"
+                    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+
+            <div class="contact-form-container">
+                <form action="https://formspree.io/f/mdkoojno" method="POST" class="contact-form">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+        <h2>FAQs</h2>
+        <div class="faq-list">
+            <div class="faq-item">
+                <h3>Is this Hackathon an online event or offline?</h3>
+                <p>This is an offline event.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Is there any registration fee?</h3>
+                <p>No, registrations for the event are entirely free of charge.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Should you stay on campus overnight?</h3>
+                <p>Yes, we ask that all participants stay on campus throughout the hackathon for the best experience.</p>
+            </div>
+            <div class="faq-item">
+                <h3>What are the facilities arranged by the organizers?</h3>
+                <p>We have arranged everything for you, including meals, comfortable accommodations, and swag.</p>
+            </div>
+            <div class="faq-item">
+                <h3>What should I bring for the hackathon?</h3>
+                <p>Bring your student ID, laptops, gadgets, or anything else you want to work on.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Will the hackathon have Wi-Fi facilities?</h3>
+                <p>Yes, we will provide Wi-Fi throughout the event.</p>
+            </div>
+            <div class="faq-item">
+                <h3>an I participate without a team?</h3>
+                <p>No, this hackathon is a team event. You can team up with others in our community group.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Will you sponsor our travel costs?</h3>
+                <p>No, we do not reimburse travel costs</p>
+            </div>
+            <div class="faq-item">
+                <h3>Do I need to be a student to participate?</h3>
+                <p>Yes, this hackathon is open to high school and undergraduate students.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-info">
+        <div class="container">
+            <div class="row">
+                <!-- Location Column -->
+                <div class="col-lg-4 col-md-4 text-center">
+                    <p class="lead">
+                        <i class="fas fa-map-marker-alt"></i> Location
+                    </p>
+                    <h4 class="s2">Saveetha Engineering College,<br>Thandalam</h4>
+                </div>
+    
+                <!-- Phone Column -->
+                <div class="col-lg-4 col-md-4 text-center">
+                    <p class="lead">
+                        <i class="fas fa-phone-alt"></i> Phone
+                    </p>
+                    <h4 class="s2">Sarankumar J: <a href="tel:+916379615515">6379615515</a></h4>
+                    <h4 class="s2">Aldrin Lijo JE: <a href="tel:+917338930198">7338930198</a></h4>
+                    <h4 class="s2">Santhan Kumar K: <a href="tel:+919959277466">9959277466</a></h4>
+                    <h4 class="s2">Karthick: <a href="tel:+919150650104">9150650104</a></h4>
+                </div>
+    
+                <!-- Email Column -->
+                <div class="col-lg-4 col-md-4 text-center">
+                    <p class="lead">
+                        <i class="fas fa-envelope"></i> Email
+                    </p>
+                    <h4 class="s2">
+                        <a href="mailto:techsociety@saveetha.ac.in">techsociety@saveetha.ac.in</a>
+                    </h4>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+   <!-- Footer -->
+    <footer>
+        <p>© 2024 Tech Society - Saveetha Engineering College. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://instagram.com/techsocietysec" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://x.com/techsocietysec" target="_blank">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.linkedin.com/company/techsociety-sec/" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://www.facebook.com/techsocietysec" target="_blank">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <!-- Add Mail Icon -->
+            <a href="mailto:techsociety@saveetha.ac.in">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </div>
+    </footer>
+
+
+    <script src="js/main.js"></script>
+    
+</body>
+
+</html>
