@@ -1,3 +1,10 @@
+// Hamburger menu functionality
+const hamburger = document.querySelector('.hamburger');
+const navbar = document.querySelector('.navbar');
+
+hamburger.addEventListener('click', () => {
+    navbar.classList.toggle('active');
+});
 
 
 // FAQ Toggle
@@ -54,5 +61,6 @@ document.querySelector('.contact-form').addEventListener('submit', function(even
     alert('Thank you! Your message has been sent.');
     this.reset(); // Clear the form
   });
+
 
 
