@@ -520,7 +520,7 @@ section {
     margin: 20px;
     border-radius: 10%;
     box-shadow: 0 0 10px #00ffcc;
-    padding: 5px;
+    padding: 10px;
 
 }
 
@@ -528,6 +528,7 @@ section {
     .sponsor-logos img{
         width: 100px;
         height: 60px;
+        padding: 1px;
     }
     .sponsor-logos {
         margin-left: 0;
