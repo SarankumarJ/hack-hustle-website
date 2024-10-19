@@ -526,9 +526,10 @@ section {
 
 @media (max-width: 768px) {
     .sponsor-logos img{
-        width: 100px;
+        width: 95px;
         height: 60px;
         padding: 1px;
+        justify-content: center;
     }
     .sponsor-logos {
         margin-left: 0;
