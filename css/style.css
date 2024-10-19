@@ -177,6 +177,22 @@ section {
     margin-bottom: 10px;
 
 }
+@media (max-width: 768px) {
+    .hero-left h1 {
+        font-size: 36px; /* Smaller font size for mobile */
+        font-weight: 500;
+    }
+
+    .hero-left h2 {
+        font-size: 24px; /* Smaller font size for mobile */
+        font-weight: 500;
+    }
+
+    .hero-left h3 {
+        font-size: 48px; /* Smaller font size for mobile */
+        font-weight: 500;
+    }
+}
 
 .cta-btn {
     background: linear-gradient(45deg, #00ffcc, #00ff99);
