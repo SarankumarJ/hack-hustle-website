@@ -230,7 +230,7 @@ section {
 
 .domains h2 {
     font-family: "Monoton", Arial;
-    background: -webkit-linear-gradient(#3498db,#00FF9C);
+    background: -webkit-linear-gradient(#3498db, #00FF9C);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     margin-bottom: 20px;
@@ -238,20 +238,18 @@ section {
     font-size: 50px;
     font-weight: bold;
     text-transform: uppercase;
-    font-weight: 900;
-    
 }
+
 .domain-cards {
     display: flex;
     justify-content: space-around;
-    width: 900px;
-    flex-direction: row;
-
+    flex-wrap: wrap; /* Allow wrapping */
     margin: auto;
-
+    width: 100%;
 }
 
 .card {
+    width: 300px;
     background: #1a1a1a;
     padding: 20px;
     border-radius: 10px;
@@ -274,6 +272,34 @@ section {
 .card h3 {
     color: #00ffcc;
 }
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .domain-cards {
+        justify-content: center; /* Center cards on smaller screens */
+    }
+
+    .card {
+        width: 250px; /* Adjust width for tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .domains h2 {
+        font-size: 36px; /* Smaller font size for mobile */
+    }
+
+    .domain-cards {
+        flex-direction: column; /* Stack cards vertically */
+        align-items: center; /* Center align cards */
+    }
+
+    .card {
+        width: 80%; /* Full width on mobile */
+        margin: 10px 0; /* Margin between stacked cards */
+    }
+}
+
 
 /* General styling for the section */
 .timeline-workflow {
@@ -621,6 +647,39 @@ section {
     background-color: #00ff99;
 }
 
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+    .contact-section h2 {
+        font-size: 36px; /* Reduce font size for heading */
+    }
+
+    .contact-container {
+        flex-direction: column; /* Stack map and form vertically */
+        align-items: center; /* Center align items */
+    }
+
+    .contact-map {
+        height: 400px; /* Reduce map height for smaller screens */
+        width: 350px; /* Adjust map width */
+
+    }
+
+    .contact-form {
+        max-width: 100%; /* Make the form take full width */
+        padding: 15px; /* Reduce padding */
+        width: 350px;
+    }
+
+    .contact-form input, .contact-form textarea {
+        font-size: 14px; /* Adjust input and textarea font size */
+    }
+
+    .contact-form button {
+        font-size: 14px; /* Adjust button font size */
+    }
+}
+
+
 
 
 /* FAQ Section */
@@ -672,13 +731,50 @@ section {
     text-align: center;
 }
 
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+    .faq h2 {
+        font-size: 36px; /* Reduce the font size */
+    }
+
+    .faq-list {
+        grid-template-columns: 1fr; /* Switch to a single column layout */
+        padding: 10px; /* Adjust padding */
+    }
+
+    .faq-item {
+        padding: 15px; /* Reduce padding for smaller screens */
+        width: 100%; /* Full width for mobile */
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .faq-item h3 {
+        font-size: 20px; /* Adjust heading size */
+    }
+
+    .faq-item p {
+        font-size: 14px; /* Adjust paragraph size */
+    }
+}
+
+
 
 
 .contact-info .row {
     padding: 40px 0;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Two columns */
+    display: flex; /* Change from grid to flex */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    justify-content: space-around; /* Center items */
     gap: 20px; /* Spacing between the items */
+}
+
+.contact-info .col-lg-4,
+.contact-info .col-md-4 {
+    flex: 1 1 300px; /* Make each column flexible */
+    max-width: 33%; /* Maximum width for larger screens */
+    box-sizing: border-box; /* Include padding and border in the element's total width */
+    margin: 10px; /* Add some margin for spacing */
 }
 
 .contact-info .lead {
@@ -711,6 +807,22 @@ section {
     font-size: 1.5em; /* Make icons a bit bigger */
 }
 
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .contact-info .col-lg-4,
+    .contact-info .col-md-4 {
+        max-width: 100%; /* Full width on smaller screens */
+    }
+
+    .contact-info .lead {
+        font-size: 18px; /* Slightly smaller font size */
+    }
+
+    .contact-info h4.s2 {
+        font-size: 16px; /* Slightly smaller font size */
+    }
+}
+
 
 
 
@@ -720,11 +832,13 @@ footer {
     color: #fff;
     text-align: center;
     padding: 20px;
-    
 }
 
 .social-links {
     margin-top: 15px;
+    display: flex;
+    justify-content: center; /* Center social links */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
 }
 
 .social-links a {
@@ -749,6 +863,19 @@ footer p {
     font-size: 14px;
     color: #ccc;
 }
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .social-links a {
+        margin: 0 5px; /* Reduce margin for smaller screens */
+        font-size: 20px; /* Slightly smaller icons on mobile */
+    }
+    
+    footer p {
+        font-size: 12px; /* Smaller text for mobile */
+    }
+}
+
 
 
 
@@ -1423,4 +1550,5 @@ footer p {
   .de-marquee-list .d-item-block{
     border-radius: 0;
   }
+
   
