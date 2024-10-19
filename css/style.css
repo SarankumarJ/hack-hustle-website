@@ -498,6 +498,8 @@ section {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 .gold-sponsors h3 {
@@ -520,6 +522,17 @@ section {
     box-shadow: 0 0 10px #00ffcc;
     padding: 10px;
 
+}
+
+@media (max-width: 768px) {
+    .sponsor-logos img{
+        width: 100px;
+        height: 60px;
+    }
+    .sponsor-logos {
+        margin-left: 0;
+        margin-right: 0;
+    }
 }
 
 /* Team Section */
