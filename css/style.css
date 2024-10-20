@@ -211,6 +211,7 @@ section {
     }
 
     .hero-left h2 {
+        font-family: Arial Narrow Bold !important;
         font-size: 3rem;
     }
 
@@ -230,6 +231,7 @@ section {
     }
 
     .hero-left h2 {
+        font-family: Arial Narrow Bold !important;
         font-size: 2rem;
     }
 
@@ -251,6 +253,7 @@ section {
     }
 
     .hero-left h2 {
+        font-family: Arial Narrow Bold !important;
         font-size: 1.5rem;
         font-weight: 400;
     }
@@ -1673,3 +1676,5 @@ footer p {
   }
 
   
+
+
