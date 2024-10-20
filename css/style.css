@@ -127,6 +127,8 @@ section {
 
 /* Hero Section */
 .hero {
+    font-family: Impact, Haettenschweiler, Arial Narrow Bold, sans-serif;
+    font-weight: 500;
     position: relative;
     display: flex;
     justify-content: center;
