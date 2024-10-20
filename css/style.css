@@ -582,7 +582,7 @@ section {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin-left: 100px;
+    margin-left: 150px;
     margin-right: 100px;
 }
 
@@ -596,12 +596,19 @@ section {
     color: #C0C0C0;
     margin-bottom: 20px;
     text-align: center;
-} 
+}
+
+.community-partners h3 {
+    color: #00ffcc;
+    margin-bottom: 20px;
+    text-align: center;
+}
 
 .sponsor-logos img {
     width: 150px;
     height: 90px;
-    margin: 20px;
+    margin-left: 45px;
+    margin-bottom: 20px;
     border-radius: 10%;
     box-shadow: 0 0 10px #00ffcc;
     padding: 10px;
@@ -612,8 +619,18 @@ section {
     .sponsor-logos img{
         width: 95px;
         height: 60px;
-        padding: 1px;
-        justify-content: center;
+    }
+    .sponsor-logos {
+        margin-left: 15px;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .sponsor-logos img{
+        width: 95px;
+        height: 60px;
+        padding: 5px;
     }
     .sponsor-logos {
         margin-left: 0;
