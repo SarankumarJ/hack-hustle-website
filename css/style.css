@@ -160,6 +160,7 @@ section {
 
 .hero-left h1 {
     background: -webkit-linear-gradient(#3498db, #00FF9C);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     margin-bottom: 20px;
