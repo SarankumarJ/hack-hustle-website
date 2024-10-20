@@ -242,6 +242,11 @@ section {
         padding: 8px;
         background-color: rgba(255, 255, 255, 0.2); /* Increased contrast for readability */
     }
+    .timer-box {
+        font-size: 1rem; /* Smaller font for the timer */
+        padding: 8px;
+        background-color: rgba(255, 255, 255, 0.2); /* Increased contrast for readability */
+    }
 }
 
 
@@ -278,7 +283,12 @@ section {
 
 .timer-box {
     text-align: center;
-    
+    background-color: #33333371;
+    align-items: center;
+    border-radius: 20px;
+    padding: 20px;
+    height: 20vh;
+    width: 120px;
 }
 
 .timer-box span {
