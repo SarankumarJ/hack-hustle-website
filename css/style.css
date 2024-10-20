@@ -156,136 +156,43 @@ section {
 }
 
 .hero-left h1 {
-    font-family: Impact, 'Haettenschweiler', Arial 'Narrow' Bold, sans-serif;
+    font-family: Impact, Haettenschweiler, Arial Narrow Bold, sans-serif;
     font-weight: 500;
     background: -webkit-linear-gradient(#3498db, #00FF9C);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     margin-bottom: 10px;
-    font-size: 3rem; /* Make the font size more responsive */
-}
-.hero-left h4 {
-    font-family: Impact, 'Haettenschweiler', Arial 'Narrow' Bold, sans-serif;
-    font-weight: 500;
-    background: -webkit-linear-gradient(#3498db, #00FF9C);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    margin-bottom: 10px;
-    font-size: 3rem; /* Make the font size more responsive */
+    text-align: center;
+    font-size: 50px;
 }
 
 .hero-left h2 {
-    font-family: Arial 'Narrow' Bold;
-    font-size: 2.5rem; /* Adjust for responsiveness */
+    font-family: Arial Narrow Bold;
+    font-size: 37px;
     font-weight: 500;
     margin-bottom: 10px;
+    text-align: center;
 }
 
 .hero-left h3 {
     font-family: Impact, Haettenschweiler, Arial Narrow Bold, sans-serif;
-    font-size: 4rem; /* Adjust font size for responsiveness */
+    font-size: 100px;
     font-weight: 500;
     margin-bottom: 10px;
+    text-align: center;
 }
 
-/* Timer */
-.hero-right #timer {
-    display: flex;
-    justify-content: center;
-    gap: 20px; /* Add space between the timer boxes */
-}
-
-.timer-box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgba(255, 255, 255, 0.1); /* Light transparent background */
-    padding: 10px;
-    border-radius: 8px;
-    color: white;
-    font-size: 1.2rem;
-}
-
-
-/* Medium Screens (Tablets) */
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     .hero-left h1 {
-        font-family: Impact, Haettenschweiler, Arial Narrow Bold, sans-serif;
-        font-weight: 600; /* Slightly bolder for mobile readability */
-        font-size: 1.8rem; /* Smaller font size for mobile */
-        line-height: 1.2; /* Better line spacing */
-        letter-spacing: 0.5px; /* Slightly increase letter spacing */
-        background: -webkit-linear-gradient(#3498db, #00FF9C);
-        -webkit-text-fill-color: transparent;
-        -webkit-background-clip: text;
-    }
-    .hero-left h4 {
-        font-family: Impact, Haettenschweiler, Arial Narrow Bold, sans-serif;
-        font-weight: 600; /* Slightly bolder for mobile readability */
-        font-size: 1.8rem; /* Smaller font size for mobile */
-        line-height: 1.2; /* Better line spacing */
-        letter-spacing: 0.5px; /* Slightly increase letter spacing */
-        background: -webkit-linear-gradient(#3498db, #00FF9C);
-        -webkit-text-fill-color: transparent;
-        -webkit-background-clip: text;
-    }
-    
-    .hero-left h2 {
-        font-family: Arial Narrow Bold;
-        font-weight: 500;
-    }
-    
-    .hero-left h3 {
-        font-family: Impact, Haettenschweiler, Arial Narrow Bold, sans-serif;
-        font-weight: 500;
-    }
-    
-}
-
-/* Small Screens (Mobile) */
-@media (max-width: 480px) {
-    .hero-left h1 {
-        font-family: Impact, Haettenschweiler, Arial Narrow Bold, sans-serif;
-        font-weight: 600; /* Slightly bolder for mobile readability */
-        font-size: 1.8rem; /* Smaller font size for mobile */
-        line-height: 1.2; /* Better line spacing */
-        letter-spacing: 0.5px; /* Slightly increase letter spacing */
-        background: -webkit-linear-gradient(#3498db, #00FF9C);
-        -webkit-text-fill-color: transparent;
-        -webkit-background-clip: text;
-    }
-    .hero-left h4 {
-        font-family: Impact, Haettenschweiler, Arial Narrow Bold, sans-serif;
-        font-weight: 600; /* Slightly bolder for mobile readability */
-        font-size: 1.8rem; /* Smaller font size for mobile */
-        line-height: 1.2; /* Better line spacing */
-        letter-spacing: 0.5px; /* Slightly increase letter spacing */
-        background: -webkit-linear-gradient(#3498db, #00FF9C);
-        -webkit-text-fill-color: transparent;
-        -webkit-background-clip: text;
+        font-size: 30px;
     }
 
     .hero-left h2 {
-        font-family: Arial Narrow Bold;
-        font-weight: 600;
-        font-size: 1.5rem;
-        line-height: 1.2;
-        letter-spacing: 0.3px;
-        
+        font-size: 25px;
     }
 
     .hero-left h3 {
-        font-family: Impact, Haettenschweiler, Arial Narrow Bold, sans-serif;
-        font-weight: 500;
-        font-size: 2.8rem;
-        line-height: 1.2;
-        letter-spacing: 0.3px;
-    }
-
-    .timer-box {
-        font-size: 1rem; /* Smaller font for the timer */
-        padding: 8px;
-        background-color: rgba(255, 255, 255, 0.2); /* Increased contrast for readability */
+        font-size: 50px;
     }
 }
 
