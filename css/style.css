@@ -258,27 +258,7 @@ section {
     .timer-box {
         font-size: 1rem; /* Smaller font for the timer */
         padding: 8px;
-        
-    }
-}
 
-@media (max-width: 768px) {
-    .hero-left h1 {
-        font-size: 36px; /* Smaller font size for mobile */
-        font-weight: 500;
-        font-family: Impact, Haettenschweiler, Arial Narrow Bold, sans-serif;
-    }
-
-    .hero-left h2 {
-        font-size: 24px; /* Smaller font size for mobile */
-        font-weight: 500;
-        font-family: Impact, Haettenschweiler, Arial Narrow Bold, sans-serif;
-    }
-
-    .hero-left h3 {
-        font-size: 48px; /* Smaller font size for mobile */
-        font-weight: 500;
-        font-family: Impact, Haettenschweiler, Arial Narrow Bold, sans-serif;
     }
 }
 
