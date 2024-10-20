@@ -153,6 +153,10 @@ section {
 .hero-left {
     text-align: center; /* Center-align the hero text */
 }
+.hero-left img {
+    width: 600px; /* Adjust image size */
+    height: 100px; /* Adjust image height */
+}
 
 .hero-left h1 {
     background: -webkit-linear-gradient(#3498db, #00FF9C);
@@ -236,6 +240,11 @@ section {
 
 /* Small Screens (Mobile) */
 @media (max-width: 480px) {
+    .hero-left img{
+        width: 300px; /* Adjust image size for mobile */
+        height: 50px; /* Adjust image height for mobile */
+        margin-top: auto;
+    }
     .hero-left h1 {
         font-size: 2rem; /* Smaller font size for mobile */
         font-weight: 400;
