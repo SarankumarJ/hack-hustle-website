@@ -155,7 +155,7 @@ section {
 }
 
 .hero-left h1 {
-    font-family: Impact;
+    font-family:'Impact','Poppins', 'Arial', sans-serif;
     font-weight: 500;
     background: -webkit-linear-gradient(#3498db, #00FF9C);
     -webkit-text-fill-color: transparent;
@@ -166,25 +166,17 @@ section {
 }
 
 .hero-left h2 {
-    font-family: Arial Bold;
-    font-size: 37px;
+    font-family: Arial Narrow Bold;
+    font-size: 2.5rem; /* Adjust for responsiveness */
     font-weight: 500;
     margin-bottom: 10px;
-    text-align: center;
 }
 
 .hero-left h3 {
-    font-family: Impact;
-    font-size: 100px;
+    font-family: Impact, Haettenschweiler, Arial Narrow Bold, sans-serif;
+    font-size: 4rem; /* Adjust font size for responsiveness */
     font-weight: 500;
     margin-bottom: 10px;
-    text-align: center;
-}
-
-@media (max-width: 768px) {
-    .hero-left h1, .hero-left h2, .hero-left h3 {
-        font-family: 'Impact', sans-serif; /* Ensure custom fonts are applied here */
-    }
 }
 
 /* Timer */
@@ -205,17 +197,71 @@ section {
     font-size: 1.2rem;
 }
 
+/* Media Queries for Responsiveness */
+
+/* Large Screens */
+@media (min-width: 1024px) {
+    .hero-left h1 {
+        font-size: 4rem; /* Larger font size for bigger screens */
+        font-weight: 500;
+    }
+
+    .hero-left h2 {
+        font-size: 3rem;
+        font-weight: 500;
+    }
+
+    .hero-left h3 {
+        font-size: 6rem; /* Bigger heading for large screens */
+        font-weight: 500;
+    }
+}
+
+/* Medium Screens (Tablets) */
+@media (max-width: 768px) {
+    .hero-content {
+        gap: 30px; /* Reduce gap on smaller screens */
+    }
+
+    .hero-left h1 {
+        font-size: 2.5rem; 
+        font-weight: 400;
+    }
+
+    .hero-left h2 {
+        font-size: 2rem;
+        font-weight: 400;
+    }
+
+    .hero-left h3 {
+        font-size: 3.5rem;
+        font-weight: 400;
+    }
+}
 
 /* Small Screens (Mobile) */
 @media (max-width: 480px) {
+    .hero-left h1 {
+        font-size: 2rem; /* Smaller font size for mobile */
+        font-weight: 400;
+    }
+
+    .hero-left h2 {
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+
+    .hero-left h3 {
+        font-size: 3rem;
+        font-weight: 400;
+    }
 
     .timer-box {
         font-size: 1rem; /* Smaller font for the timer */
         padding: 8px;
-        background-color: rgba(255, 255, 255, 0.2); /* Increased contrast for readability */
+
     }
 }
-
 
 .cta-btn {
     background: linear-gradient(45deg, #00ffcc, #00ff99);
