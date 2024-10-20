@@ -155,14 +155,15 @@ section {
 }
 
 .hero-left h1 {
-    font-family: 'Impact','Poppins', 'Arial', sans-serif;
-    font-weight: 500;
     background: -webkit-linear-gradient(#3498db, #00FF9C);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     text-align: center;
     font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-weight: 900;
 }
 
 .hero-left h2 {
@@ -202,18 +203,15 @@ section {
 /* Large Screens */
 @media (min-width: 1024px) {
     .hero-left h1 {
-        font-size: 4rem; /* Larger font size for bigger screens */
-        font-weight: 500;
+        font-size: 4rem;
     }
 
     .hero-left h2 {
         font-size: 3rem;
-        font-weight: 500;
     }
 
     .hero-left h3 {
-        font-size: 6rem; /* Bigger heading for large screens */
-        font-weight: 500;
+        font-size: 6rem;
     }
 }
 
@@ -225,17 +223,14 @@ section {
 
     .hero-left h1 {
         font-size: 2.5rem; 
-        font-weight: 400;
     }
 
     .hero-left h2 {
         font-size: 2rem;
-        font-weight: 400;
     }
 
     .hero-left h3 {
         font-size: 3.5rem;
-        font-weight: 400;
     }
 }
 
