@@ -202,14 +202,17 @@ section {
 @media (min-width: 1024px) {
     .hero-left h1 {
         font-size: 4rem; /* Larger font size for bigger screens */
+        font-weight: 600;
     }
 
     .hero-left h2 {
         font-size: 3rem;
+        font-weight: 500;
     }
 
     .hero-left h3 {
         font-size: 6rem; /* Bigger heading for large screens */
+        font-weight: 600;
     }
 }
 
@@ -220,15 +223,18 @@ section {
     }
 
     .hero-left h1 {
-        font-size: 2.5rem;
+        font-size: 2.5rem; 
+        font-weight: 500;
     }
 
     .hero-left h2 {
         font-size: 2rem;
+        font-weight: 500;
     }
 
     .hero-left h3 {
         font-size: 3.5rem;
+        font-weight: 500;
     }
 }
 
@@ -236,19 +242,23 @@ section {
 @media (max-width: 480px) {
     .hero-left h1 {
         font-size: 2rem; /* Smaller font size for mobile */
+        font-weight: 500;
     }
 
     .hero-left h2 {
         font-size: 1.5rem;
+        font-weight: 500;
     }
 
     .hero-left h3 {
         font-size: 3rem;
+        font-weight: 500;
     }
 
     .timer-box {
         font-size: 1rem; /* Smaller font for the timer */
         padding: 8px;
+        
     }
 }
 
