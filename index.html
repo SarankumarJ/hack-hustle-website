@@ -405,6 +405,23 @@
 
 
     <script src="js/main.js"></script>
+    <script>
+        // Function to apply inline styles for mobile view
+        function applyMobileStyles() {
+          const element = document.querySelector('.pre');
+          
+          if (window.innerWidth <= 480) {
+            element.style.fontFamily = '"Arial Narrow", Arial, sans-serif';
+            element.style.fontSize = '1.5rem';
+            element.style.fontWeight = '700';
+            element.style.color = 'black';
+          }
+        }
+      
+        // Apply styles on page load and on window resize
+        applyMobileStyles();
+        window.addEventListener('resize', applyMobileStyles);
+      </script>
     
 </body>
 
