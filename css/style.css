@@ -175,7 +175,15 @@ section {
         font-family: "Arial Narrow", Arial, sans-serif; /* Proper fallback fonts */
         font-size: 1.5rem;
         font-weight: 700; /* For bold text */
+        color: blue;
+    }
+
+    .pre{
+        font-family: "Arial Narrow", Arial, sans-serif; /* Proper fallback fonts */
+        font-size: 1.5rem;
+        font-weight: 700; /* For bold text */
         color: green;
+
     }
 
 
@@ -217,6 +225,15 @@ section {
         font-size: 1.5rem;
         font-weight: 700; /* For bold text */
     }
+
+    .pre{
+        font-family: "Arial Narrow", Arial, sans-serif; /* Proper fallback fonts */
+        font-size: 1.5rem;
+        font-weight: 700; /* For bold text */
+        color: grey;
+
+    }
+
     
 
     .hero-left h3 {
@@ -240,6 +257,15 @@ section {
         font-weight: 700; /* For bold text */
     }
 
+    .pre{
+        font-family: "Arial Narrow", Arial, sans-serif; /* Proper fallback fonts */
+        font-size: 1.5rem;
+        font-weight: 700; /* For bold text */
+        color: yellow;
+
+    }
+
+
     .hero-left h3 {
         font-size: 3.5rem;
     }
@@ -262,6 +288,15 @@ section {
         font-size: 1.5rem;
         font-weight: 700; /* For bold text */
     }
+
+    .pre{
+        font-family: "Arial Narrow", Arial, sans-serif; /* Proper fallback fonts */
+        font-size: 1.5rem;
+        font-weight: 700; /* For bold text */
+        color: goldenrod;
+
+    }
+
 
     .hero-left h3 {
         font-size: 3rem;
