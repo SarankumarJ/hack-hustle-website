@@ -170,13 +170,14 @@ section {
     font-weight: 900;
 }
 
-.hero-left h2 {
+
     .hero-left h2 {
         font-family: "Arial Narrow", Arial, sans-serif; /* Proper fallback fonts */
         font-size: 1.5rem;
         font-weight: 700; /* For bold text */
+        color: green;
     }
-}
+
 
 .hero-left h3 {
     font-family: Impact, Haettenschweiler, Arial Narrow Bold, sans-serif;
