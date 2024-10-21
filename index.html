@@ -167,6 +167,7 @@
             <div class="prize-card">
                 <h2>Machine Learning</h2>
                 <div class="prize-gold">
+                    <img src="images/icons/" alt="Gold Medal Icon">
                     <h3>Winner</h3>
                     <p>₹20,000</p>
                 </div>
@@ -408,25 +409,30 @@
     <script>
         // Function to apply inline styles for mobile view
         function applyMobileStyles() {
-          const element = document.querySelector('.pre');
-          const hackhustle = document.querySelector('.h3');
-          
-          if (window.innerWidth <= 480) {
-            hackhustle.fontFamily = 'Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif';
-            element.style.fontSize = '1.5rem';
-            element.style.fontWeight = '700';
-            element.style.color = 'white';
-            hackhustle.style.fontSize = '3.8rem';
-            hackhustle.style.fontWeight = '900'; 
-            hackhustle.style.cssText = 'font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; font-weight: bold !important;';
-            hackhustle.style.textShadow = '1px 1px 0px black, 0px 1px 0px black, 1px 0px 0px black, -1px 0px 0px black, 0px -1px 0px black';
+            const element = document.querySelector('.pre');
+            const hackhustle = document.querySelector('.hackhustle'); // Ensure you are selecting the right class
+    
+            if (window.innerWidth <= 480) {
+                if (element) {
+                    element.style.fontSize = '1.5rem';
+                    element.style.fontWeight = '700';
+                    element.style.color = 'white';
+                }
+    
+                if (hackhustle) {
+                    hackhustle.style.fontSize = '3.8rem';
+                    hackhustle.style.fontWeight = '900';
+                    hackhustle.style.fontFamily = 'Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif';
+                    hackhustle.style.textShadow = '1px 1px 0px black, 0px 1px 0px black, 1px 0px 0px black, -1px 0px 0px black, 0px -1px 0px black';
+                }
+            }
         }
-        }
-      
+    
         // Apply styles on page load and on window resize
-        applyMobileStyles();
+        window.addEventListener('load', applyMobileStyles);
         window.addEventListener('resize', applyMobileStyles);
-      </script>
+    </script>
+    
     
 </body>
 
