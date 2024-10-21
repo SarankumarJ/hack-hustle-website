@@ -140,13 +140,13 @@ section {
 /* Hero Content */
 .hero-content {
     display: flex;
-    flex-direction: column; /* Stack content vertically */
+    flex-direction: column;
     align-items: center;
     width: 100%;
     max-width: 1200px;
     padding: 0 20px;
     z-index: 2;
-    gap: 40px; /* Adjusted gap for better spacing */
+    gap: 40px;
 }
 
 /* Left Side Content (Top Section) */
@@ -159,7 +159,7 @@ section {
     background-size: 200% auto;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: gradientMove 3s ease-in-out infinite; /* Animate gradient */
+    animation: gradientMove 3s ease-in-out infinite;
     margin-bottom: 20px;
     text-align: center;
     font-weight: bold;
@@ -174,7 +174,7 @@ section {
     background-size: 200% auto;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: gradientMove 3s ease-in-out infinite; /* Animate gradient */
+    animation: gradientMove 3s ease-in-out infinite;
     margin-bottom: 20px;
     text-align: center;
     font-weight: bold;
@@ -207,16 +207,16 @@ section {
 
 /* Bold and Prominent H3 Styling */
 .hero-left h3 {
-    background: linear-gradient(90deg, #FF6B6B, #FFD93D); /* Bright and strong gradient */
+    background: linear-gradient(90deg, #FF6B6B, #FFD93D);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
-    margin-bottom: 30px; /* Increase space below for visual balance */
+    margin-bottom: 30px;
     text-align: center;
-    font-size: 6rem; /* Large, bold font size for emphasis */
-    font-weight: 900; /* Strongest weight for prominence */
-    letter-spacing: 2px; /* Slightly increased letter spacing */
-    text-transform: uppercase; /* All caps for a strong, important look */
-    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25); /* Bold shadow for depth and readability */
+    font-size: 6rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
 }
 
 /* Timer Section */
@@ -238,6 +238,7 @@ section {
 }
 
 /* Media Queries for Responsiveness */
+
 /* Medium Screens (Tablets) */
 @media (max-width: 1024px) and (min-width: 769px) {
     .hero-content {
@@ -245,32 +246,38 @@ section {
     }
 
     .hero-left h1 {
+        font-size: 3.5rem;
+    }
+
+    .hero-left h4 {
         font-size: 4rem;
     }
-    .hero-left h4 {
-        font-size: 4.5rem;
-    }
-    
+
     .hero-left h2 {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 
     .hero-left h3 {
-        font-size: 4rem;
+        font-size: 4.5rem;
     }
 }
 
 /* Small Screens (Tablets and Large Phones) */
 @media (max-width: 768px) and (min-width: 481px) {
+    .hero-content {
+        gap: 25px;
+    }
+
     .hero-left h1 {
         font-size: 3rem;
     }
+
     .hero-left h4 {
         font-size: 3.5rem;
     }
-    
+
     .hero-left h2 {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     .hero-left h3 {
@@ -278,13 +285,17 @@ section {
     }
 
     .timer-box {
-        font-size: 1rem; /* Slightly smaller font for better fit */
+        font-size: 1rem;
         padding: 8px;
     }
 }
 
 /* Extra Small Screens (Mobile) */
 @media (max-width: 480px) {
+    .hero-content {
+        gap: 20px;
+    }
+
     .hero-left img {
         width: 300px;
         height: 50px;
@@ -292,11 +303,12 @@ section {
     }
 
     .hero-left h1 {
-        font-size: 2rem;
+        font-size: 2.5rem;
         font-weight: 600;
     }
+
     .hero-left h4 {
-        font-size: 2.5rem;
+        font-size: 2rem;
         font-weight: 600;
     }
 
@@ -311,10 +323,11 @@ section {
     }
 
     .timer-box {
-        font-size: 0.9rem; /* Smaller font for mobile */
+        font-size: 0.9rem;
         padding: 6px;
     }
 }
+
 
 
 
