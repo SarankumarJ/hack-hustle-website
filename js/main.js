@@ -23,36 +23,41 @@ const countdown = () => {
     const now = new Date().getTime();
     const difference = targetDate - now;
 
+    if (difference < 0) {
+        clearInterval(timerInterval);
+        const timerElement = document.getElementById("timer");
+        if (timerElement) {
+            timerElement.innerHTML = "Event Started!";
+        }
+        return; // Stop execution if the event has started
+    }
+
     const days = Math.floor(difference / (1000 * 60 * 60 * 24));
     const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
     const seconds = Math.floor((difference % (1000 * 60)) / 1000);
 
-    document.getElementById("days").innerHTML = days;
-    document.getElementById("hours").innerHTML = hours;
-    document.getElementById("minutes").innerHTML = minutes;
-    document.getElementById("seconds").innerHTML = seconds;
-
-    if (difference < 0) {
-        clearInterval(timerInterval);
-        document.getElementById("timer").innerHTML = "Event Started!";
+    // Ensure that the elements exist before updating
+    if (document.getElementById("days")) {
+        document.getElementById("days").innerHTML = days;
+    }
+    if (document.getElementById("hours")) {
+        document.getElementById("hours").innerHTML = hours < 10 ? `0${hours}` : hours;
+    }
+    if (document.getElementById("minutes")) {
+        document.getElementById("minutes").innerHTML = minutes < 10 ? `0${minutes}` : minutes;
+    }
+    if (document.getElementById("seconds")) {
+        document.getElementById("seconds").innerHTML = seconds < 10 ? `0${seconds}` : seconds;
     }
 };
 
+// Start the countdown
 const timerInterval = setInterval(countdown, 1000);
 
+// Optional: Call the countdown immediately to prevent delay on page load
+countdown();
 
-$(function(){
-    // Marquee for the de-marquee-list
-    $('.de-marquee-list').marquee({
-        direction: 'left',       // Scroll left
-        duration: 25000,         // Duration of one complete scroll cycle (15 seconds)
-        gap: 0,                  // No gap between items
-        delayBeforeStart: 0,      // No delay before start
-        duplicated: true,        // Duplicate the marquee items to create an infinite loop effect
-        startVisible: true        // Start when the element is visible
-    });
-});
 
 
 document.querySelector('.contact-form').addEventListener('submit', function(event) {
