@@ -140,22 +140,18 @@ section {
 /* Hero Content */
 .hero-content {
     display: flex;
-    flex-direction: column; /* Stack content on top of each other */
-    align-items: center;    /* Center align both timer and content */
+    flex-direction: column; /* Stack content vertically */
+    align-items: center;
     width: 100%;
     max-width: 1200px;
     padding: 0 20px;
     z-index: 2;
-    gap: 50px; /* Space between text and timer */
+    gap: 40px; /* Adjusted gap for better spacing */
 }
 
-/* Left Side Content (Now at the Top) */
+/* Left Side Content (Top Section) */
 .hero-left {
-    text-align: center; /* Center-align the hero text */
-}
-.hero-left img {
-    width: 600px; /* Adjust image size */
-    height: 100px; /* Adjust image height */
+    text-align: center;
 }
 
 .hero-left h1 {
@@ -166,28 +162,19 @@ section {
     margin-bottom: 20px;
     text-align: center;
     font-size: 50px;
-    font-weight: bold;
-    text-transform: uppercase;
     font-weight: 900;
+    text-transform: uppercase;
 }
 
+/* H2 Styling */
+.hero-left h2 {
+    font-family: "Arial Narrow", Arial, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: blue;
+}
 
-    .hero-left h2 {
-        font-family: "Arial Narrow", Arial, sans-serif; /* Proper fallback fonts */
-        font-size: 1.5rem;
-        font-weight: 700; /* For bold text */
-        color: blue;
-    }
-
-    .pre{
-        font-family: "Arial Narrow", Arial, sans-serif; /* Proper fallback fonts */
-        font-size: 1.5rem;
-        font-weight: 700; /* For bold text */
-        color: green;
-
-    }
-
-
+/* H3 Styling */
 .hero-left h3 {
     font-family: Impact, Haettenschweiler, Arial Narrow Bold, sans-serif;
     font-size: 4rem; /* Adjust font size for responsiveness */
@@ -195,18 +182,18 @@ section {
     margin-bottom: 10px;
 }
 
-/* Timer */
+/* Timer Section */
 .hero-right #timer {
     display: flex;
     justify-content: center;
-    gap: 20px; /* Add space between the timer boxes */
+    gap: 20px; /* Space between timer boxes */
 }
 
 .timer-box {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgba(255, 255, 255, 0.1); /* Light transparent background */
+    background-color: rgba(255, 255, 255, 0.1);
     padding: 10px;
     border-radius: 8px;
     color: white;
@@ -221,95 +208,56 @@ section {
         font-size: 4rem;
     }
 
-    .hero-left h2 {
-        font-family: "Arial Narrow", Arial, sans-serif; /* Proper fallback fonts */
-        font-size: 1.5rem;
-        font-weight: 700; /* For bold text */
-    }
-
-    .pre{
-        font-family: "Arial Narrow", Arial, sans-serif; /* Proper fallback fonts */
-        font-size: 1.5rem;
-        font-weight: 700; /* For bold text */
-        color: grey;
-
-    }
-
-    
-
     .hero-left h3 {
-        font-size: 6rem;
+        font-size: 3rem;
     }
 }
 
 /* Medium Screens (Tablets) */
 @media (max-width: 768px) {
     .hero-content {
-        gap: 30px; /* Reduce gap on smaller screens */
+        gap: 30px;
     }
 
     .hero-left h1 {
-        font-size: 2.5rem; 
+        font-size: 3rem;
     }
-
-    .hero-left h2 {
-        font-family: "Arial Narrow", Arial, sans-serif; /* Proper fallback fonts */
-        font-size: 1.5rem;
-        font-weight: 700; /* For bold text */
-    }
-
-    .pre{
-        font-family: "Arial Narrow", Arial, sans-serif; /* Proper fallback fonts */
-        font-size: 1.5rem;
-        font-weight: 700; /* For bold text */
-        color: yellow;
-
-    }
-
 
     .hero-left h3 {
-        font-size: 3.5rem;
+        font-size: 2.5rem;
+        color: grey;
     }
 }
 
 /* Small Screens (Mobile) */
 @media (max-width: 480px) {
-    .hero-left img{
-        width: 300px; /* Adjust image size for mobile */
-        height: 50px; /* Adjust image height for mobile */
+    .hero-left img {
+        width: 300px;
+        height: 50px;
         margin-top: auto;
     }
+
     .hero-left h1 {
-        font-size: 2rem; /* Smaller font size for mobile */
-        font-weight: 400;
+        font-size: 2rem;
+        font-weight: 600;
     }
 
     .hero-left h2 {
-        font-family: "Arial Narrow", Arial, sans-serif; /* Proper fallback fonts */
-        font-size: 1.5rem;
-        font-weight: 700; /* For bold text */
+        font-size: 1.2rem;
+        font-weight: 600;
     }
-
-    .pre{
-        font-family: "Arial Narrow", Arial, sans-serif; /* Proper fallback fonts */
-        font-size: 1.5rem;
-        font-weight: 700; /* For bold text */
-        color: black;
-
-    }
-
 
     .hero-left h3 {
-        font-size: 3rem;
-        font-weight: 400;
+        font-size: 2.5rem;
+        font-weight: 600;
     }
 
     .timer-box {
-        font-size: 1rem; /* Smaller font for the timer */
-        padding: 8px;
-
+        font-size: 0.9rem; /* Smaller font for mobile */
+        padding: 6px;
     }
 }
+
 
 .cta-btn {
     background: linear-gradient(45deg, #00ffcc, #00ff99);
